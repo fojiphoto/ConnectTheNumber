@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5aa11d7e01366344cac0fb7efc5b1560
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 232880
+  packageName: Connect - Game Template (2021 LTS)
+  packageVersion: 1.0.1
+  assetPath: Assets/Ilumisoft/Connect/Resources/Ilumisoft/Connect/InitializeOnLoad/Background
+    Particles.prefab
+  uploadId: 587035

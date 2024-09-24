@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d6e42d4816806164ebfb336285291252
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 232880
+  packageName: Connect - Game Template (2021 LTS)
+  packageVersion: 1.0.1
+  assetPath: Assets/Ilumisoft/Connect/Assets/Prefabs/Camera/Main Camera.prefab
+  uploadId: 587035

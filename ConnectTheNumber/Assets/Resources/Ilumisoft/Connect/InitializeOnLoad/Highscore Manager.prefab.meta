@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 03b257a1ae46f19489fe83b728700929
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 232880
+  packageName: Connect - Game Template (2021 LTS)
+  packageVersion: 1.0.1
+  assetPath: Assets/Ilumisoft/Connect/Resources/Ilumisoft/Connect/InitializeOnLoad/Highscore
+    Manager.prefab
+  uploadId: 587035

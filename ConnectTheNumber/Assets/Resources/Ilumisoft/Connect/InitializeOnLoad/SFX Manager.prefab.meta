@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 611fb22b88816ed44a57b649a851597b
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 232880
+  packageName: Connect - Game Template (2021 LTS)
+  packageVersion: 1.0.1
+  assetPath: Assets/Ilumisoft/Connect/Resources/Ilumisoft/Connect/InitializeOnLoad/SFX
+    Manager.prefab
+  uploadId: 587035

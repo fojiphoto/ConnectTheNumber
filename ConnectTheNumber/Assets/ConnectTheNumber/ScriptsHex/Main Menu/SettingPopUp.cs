@@ -90,7 +90,7 @@ public class SettingPopUp : MonoBehaviour
         _isExpanded = !_isExpanded;
         if (_isExpanded)
         {
-            AudioController.Instance.PlaySound(AudioController.Instance.click);
+            ColorConnectAudioController.Instance.PlaySound(ColorConnectAudioController.Instance.click);
 
             MusicBtn.SetActive(true);
             SfxBtn.SetActive(true);
@@ -107,7 +107,7 @@ public class SettingPopUp : MonoBehaviour
         }
         else
         {
-            AudioController.Instance.PlaySound(AudioController.Instance.click);
+            ColorConnectAudioController.Instance.PlaySound(ColorConnectAudioController.Instance.click);
 
             for (int i = 0; i < _itemCount; i++)
             {
@@ -140,12 +140,12 @@ public class SettingPopUp : MonoBehaviour
         {
             case 0:
                 uiMuteMusic.gameObject.SetActive(!uiMuteMusic.activeSelf);
-                AudioController.Instance.ToggleMusic();
+                ColorConnectAudioController.Instance.ToggleMusic();
                 SaveButtonStates();
                 break;
             case 1:
                 uiMuteSFX.gameObject.SetActive(!uiMuteSFX.activeSelf);
-                AudioController.Instance.ToggleSFX();
+                ColorConnectAudioController.Instance.ToggleSFX();
                 SaveButtonStates();
                 break;
         }

@@ -27,7 +27,7 @@ public class SettingPopUpItem : MonoBehaviour
     {
         
         _settingsPopUp.OnItemClick(_index);
-        AudioController.Instance.PlaySound(AudioController.Instance.click);
+        ColorConnectAudioController.Instance.PlaySound(ColorConnectAudioController.Instance.click);
     }
 
     private void OnDestroy()

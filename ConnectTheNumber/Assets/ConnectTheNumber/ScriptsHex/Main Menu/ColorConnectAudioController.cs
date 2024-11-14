@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class AudioController : MonoBehaviour 
+public class ColorConnectAudioController : MonoBehaviour 
 {
-    public static AudioController Instance;
+    public static ColorConnectAudioController Instance;
 
     [Header("Main Settings:")]
     [Range(0, 1)]

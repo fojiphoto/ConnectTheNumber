@@ -2,7 +2,7 @@
 
 namespace Ilumisoft.Hex
 {
-    public class MainMenu : MonoBehaviour
+    public class ColorConnectMainMenu : MonoBehaviour
     {
         void Update()
         {

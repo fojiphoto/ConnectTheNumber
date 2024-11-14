@@ -28,7 +28,7 @@ namespace Ilumisoft.Hex
 
                 if (selection.Count > 1)
                 {
-                    AudioController.Instance.PlaySound(AudioController.Instance.select);
+                    ColorConnectAudioController.Instance.PlaySound(ColorConnectAudioController.Instance.select);
                 }
             }
             else if (IsSecondToLast(gameTile))

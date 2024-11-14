@@ -40,7 +40,7 @@ namespace Ilumisoft.Hex.Operations
 
             ClearSelectionLine();
 
-            AudioController.Instance.PlaySound(AudioController.Instance.merge);
+            ColorConnectAudioController.Instance.PlaySound(ColorConnectAudioController.Instance.merge);
 
 
             /*if (AdsController.Instance.InternAdsTime <= 0)
@@ -78,7 +78,7 @@ namespace Ilumisoft.Hex.Operations
 
             LevelUp(last, newLevel);
 
-            AudioController.Instance.PlaySound(AudioController.Instance.pop);
+            ColorConnectAudioController.Instance.PlaySound(ColorConnectAudioController.Instance.pop);
 
 
             // Spawn effect after merging is complete

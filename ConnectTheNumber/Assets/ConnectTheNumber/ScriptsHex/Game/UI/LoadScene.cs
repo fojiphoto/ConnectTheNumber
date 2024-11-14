@@ -40,14 +40,14 @@ public class LoadScene : MonoBehaviour
    
     public void Restart()
     {
-        AudioController.Instance.PlaySound(AudioController.Instance.click);
+        ColorConnectAudioController.Instance.PlaySound(ColorConnectAudioController.Instance.click);
 
         SceneManager.LoadScene("GamePlay2");
     }
     public void BackMenu()
     {
 
-        AudioController.Instance.PlaySound(AudioController.Instance.click);
+        ColorConnectAudioController.Instance.PlaySound(ColorConnectAudioController.Instance.click);
         SceneManager.LoadScene("Menu");
     }
 
@@ -94,46 +94,50 @@ public class LoadScene : MonoBehaviour
 
     public void RestartAdsInter()
     {
-        if (AdsController.Instance.InternAdsTime <= 0)
-        {
-            AdManager.instance.ShowInter(() =>
-            {
-                AdsController.Instance.ResetTime();
-                Restart();
-            },
-            () =>
-            {
-                AdsController.Instance.ResetTime();
+        Restart();
+        //Nadeem Ads ColorConnect
+        //if (AdsController.Instance.InternAdsTime <= 0)
+        //{
+        //    AdManager.instance.ShowInter(() =>
+        //    {
+        //        AdsController.Instance.ResetTime();
+        //        Restart();
+        //    },
+        //    () =>
+        //    {
+        //        AdsController.Instance.ResetTime();
 
-                Restart();
-            }, "Null");
-        }
-        else
-        {
-            Restart();
-        }
+        //        Restart();
+        //    }, "Null");
+        //}
+        //else
+        //{
+        //    Restart();
+        //}
     }
 
     public void BackMenuAdsInter()
     {
-        if (AdsController.Instance.InternAdsTime <= 0)
-        {
-            AdManager.instance.ShowInter(() =>
-            {
-                AdsController.Instance.ResetTime();
-                BackMenu();
-            },
-            () =>
-            {
-                AdsController.Instance.ResetTime();
+        BackMenu();
+        // Nadeem Ads ColorConnect
+        //if (AdsController.Instance.InternAdsTime <= 0)
+        //{
+        //    AdManager.instance.ShowInter(() =>
+        //    {
+        //        AdsController.Instance.ResetTime();
+        //        BackMenu();
+        //    },
+        //    () =>
+        //    {
+        //        AdsController.Instance.ResetTime();
 
-                BackMenu();
-            }, "Null");
-        }
-        else
-        {
-            BackMenu();
-        }
+        //        BackMenu();
+        //    }, "Null");
+        //}
+        //else
+        //{
+        //    BackMenu();
+        //}
     }
 
 

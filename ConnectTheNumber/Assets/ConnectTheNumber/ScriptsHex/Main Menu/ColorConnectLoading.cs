@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using DG.Tweening;
 
 using System;
-public class Loading : MonoBehaviour
+public class ColorConnectLoading : MonoBehaviour
 {
     public Image LoadingFill_UI;
     public float TimeDuration;

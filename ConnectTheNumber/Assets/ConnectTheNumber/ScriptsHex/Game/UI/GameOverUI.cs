@@ -29,7 +29,7 @@ namespace Ilumisoft.Hex
             }
 
             DisplayScore();
-            AudioController.Instance.PlaySound(AudioController.Instance.lose);
+            ColorConnectAudioController.Instance.PlaySound(ColorConnectAudioController.Instance.lose);
 
         }
 

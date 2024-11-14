@@ -8,25 +8,25 @@ public class UiMainMenu : MonoBehaviour
 
     private void Awake()
     {
-        AdManager.instance.ShowBanner();
+       // AdManager.instance.ShowBanner();
     }
 
     [SerializeField] private GameObject helpPopup;
     public void PlayGame()
     {
-        AudioController.Instance.PlaySound(AudioController.Instance.click);
+        ColorConnectAudioController.Instance.PlaySound(ColorConnectAudioController.Instance.click);
         SceneManager.LoadScene("GamePlay2");
     }
 
     public void Help()
     {
-        AudioController.Instance.PlaySound(AudioController.Instance.click);
+        ColorConnectAudioController.Instance.PlaySound(ColorConnectAudioController.Instance.click);
         helpPopup.SetActive(true);
     }
 
     public void BackMenu()
     {
-        AudioController.Instance.PlaySound(AudioController.Instance.click);
+        ColorConnectAudioController.Instance.PlaySound(ColorConnectAudioController.Instance.click);
 
         helpPopup.SetActive(false);
     }

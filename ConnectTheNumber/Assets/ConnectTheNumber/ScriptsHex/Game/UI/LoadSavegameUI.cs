@@ -42,13 +42,13 @@ namespace Ilumisoft.Hex
 
         public void Confirm()
         {
-            AudioController.Instance.PlaySound(AudioController.Instance.click);
+            ColorConnectAudioController.Instance.PlaySound(ColorConnectAudioController.Instance.click);
             state = State.Confimred;
         }
 
         public void Cancel()
         {
-            AudioController.Instance.PlaySound(AudioController.Instance.click);
+            ColorConnectAudioController.Instance.PlaySound(ColorConnectAudioController.Instance.click);
 
             state = State.Cancelled;
         }

@@ -53,29 +53,32 @@ namespace Ilumisoft.Hex
 
         public void Revive()
         {
-            AudioController.Instance.PlaySound(AudioController.Instance.click);
+            ColorConnectAudioController.Instance.PlaySound(ColorConnectAudioController.Instance.click);
+            PlayerPrefs.SetInt("isReviving", 1); // Đặt isReviving thành true
+            PlayerPrefs.Save();
+            SceneManager.LoadScene("GamePlay2");
+            //NAdeem ads Colorconnect
+            //if (Application.internetReachability == NetworkReachability.NotReachable)
+            //{
 
-            if (Application.internetReachability == NetworkReachability.NotReachable)
-            {
+            //    LoadScene.Instance.ShowNoInternetMessage();
+            //    return;
+            //}
+            //AdManager.instance.ShowReward(() =>
+            //{
+            //    PlayerPrefs.SetInt("isReviving", 1); // Đặt isReviving thành true
+            //    PlayerPrefs.Save();
+            //    SceneManager.LoadScene("GamePlay2");
+            //}, () =>
+            //{
 
-                LoadScene.Instance.ShowNoInternetMessage();
-                return;
-            }
-            AdManager.instance.ShowReward(() =>
-            {
-                PlayerPrefs.SetInt("isReviving", 1); // Đặt isReviving thành true
-                PlayerPrefs.Save();
-                SceneManager.LoadScene("GamePlay2");
-            }, () =>
-            {
-
-            }, "YourPlacementID");
+            //}, "YourPlacementID");
             
         }
 
         public void Reload()
         {
-            AudioController.Instance.PlaySound(AudioController.Instance.click);
+            ColorConnectAudioController.Instance.PlaySound(ColorConnectAudioController.Instance.click);
             PlayerPrefs.SetInt("isReloading", 1);
             PlayerPrefs.Save();
             SceneManager.LoadScene("GamePlay2");
@@ -83,24 +86,26 @@ namespace Ilumisoft.Hex
 
         public void ReloadAdsInter()
         {
-            if (AdsController.Instance.InternAdsTime <= 0)
-            {
-                AdManager.instance.ShowInter(() =>
-                {
-                    AdsController.Instance.ResetTime();
-                    Reload();
-                },
-                () =>
-                {
-                    AdsController.Instance.ResetTime();
+            Reload();
+           // Nadeem Ads ColorConnect
+            //if (AdsController.Instance.InternAdsTime <= 0)
+            //{
+            //    AdManager.instance.ShowInter(() =>
+            //    {
+            //        AdsController.Instance.ResetTime();
+            //        Reload();
+            //    },
+            //    () =>
+            //    {
+            //        AdsController.Instance.ResetTime();
 
-                    Reload();
-                }, "Null");
-            }
-            else
-            {
-                Reload();
-            }
+            //        Reload();
+            //    }, "Null");
+            //}
+            //else
+            //{
+            //    Reload();
+            //}
         }
 
         

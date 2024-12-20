@@ -54,9 +54,13 @@ namespace Ilumisoft.Hex
         public void Revive()
         {
             ColorConnectAudioController.Instance.PlaySound(ColorConnectAudioController.Instance.click);
-            PlayerPrefs.SetInt("isReviving", 1); // Đặt isReviving thành true
-            PlayerPrefs.Save();
-            SceneManager.LoadScene("GamePlay2");
+            AdsManager.instance.ShowRewardedAd(() =>
+            {
+                PlayerPrefs.SetInt("isReviving", 1); // Đặt isReviving thành true
+                PlayerPrefs.Save();
+                SceneManager.LoadScene("GamePlay2");
+            });
+            
             //NAdeem ads Colorconnect
             //if (Application.internetReachability == NetworkReachability.NotReachable)
             //{
@@ -86,6 +90,7 @@ namespace Ilumisoft.Hex
 
         public void ReloadAdsInter()
         {
+            AdsManager.instance.ShowInterstitialWithoutConditions("");
             Reload();
            // Nadeem Ads ColorConnect
             //if (AdsController.Instance.InternAdsTime <= 0)

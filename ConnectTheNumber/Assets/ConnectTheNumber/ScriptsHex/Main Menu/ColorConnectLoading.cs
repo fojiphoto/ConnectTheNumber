@@ -20,10 +20,15 @@ public class ColorConnectLoading : MonoBehaviour
     {
         OnLoadingUpdate += UpdateLoadingText;
         LoadingFill();
+        Invoke(nameof(showbanner), 3);
     }
-
+    public void showbanner()
+    {
+        AdsManager.instance.ShowBanner();
+    }
     void LoadingFill()
     {
+        
         LoadingFill_UI.DOFillAmount(1f, TimeDuration).OnUpdate(() =>
         {
             OnLoadingUpdate?.Invoke();

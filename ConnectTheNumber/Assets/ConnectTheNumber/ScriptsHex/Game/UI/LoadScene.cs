@@ -94,6 +94,7 @@ public class LoadScene : MonoBehaviour
 
     public void RestartAdsInter()
     {
+        AdsManager.instance.ShowInterstitialWithoutConditions("");
         Restart();
         //Nadeem Ads ColorConnect
         //if (AdsController.Instance.InternAdsTime <= 0)
@@ -118,6 +119,7 @@ public class LoadScene : MonoBehaviour
 
     public void BackMenuAdsInter()
     {
+        AdsManager.instance.ShowInterstitialWithoutConditions("");
         BackMenu();
         // Nadeem Ads ColorConnect
         //if (AdsController.Instance.InternAdsTime <= 0)
